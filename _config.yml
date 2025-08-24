@@ -115,7 +115,7 @@ analytics:
 # Site Author
 author:
   name             : "Nguyễn Văn Tiến (Naïvellé)"
-  avatar           : "/assets/images/avatar.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/avt.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Blogger, Developer & Learner. Chia sẻ những suy nghĩ và trải nghiệm qua góc nhìn cá nhân."
   location         : "Thanh Oai - Hà Nội - Việt Nam"
   email            : "naivelle.blog@gmail.com"
