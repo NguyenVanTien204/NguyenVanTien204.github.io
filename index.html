@@ -1,4 +1,43 @@
 ---
 layout: home
 author_profile: true
+classes: wide
+title: "Chào mừng đến với Naïvellé"
+excerpt: "Nơi chia sẻ những suy nghĩ, trải nghiệm và kiến thức"
+header:
+  overlay_color: "#3b82f6"
+  overlay_filter: "0.3"
+  overlay_image: /assets/images/header-bg.jpg
+  actions:
+    - label: "Tìm hiểu thêm"
+      url: "/about/"
+      btn_class: "btn--light-outline"
+intro:
+  - excerpt: "Blog cá nhân nơi tôi chia sẻ những câu chuyện, kiến thức về công nghệ, và hành trình phát triển bản thân. Hãy cùng khám phá và học hỏi!"
+feature_row:
+  - image_path: /assets/images/feature-tech.jpg
+    alt: "Công nghệ"
+    title: "Công nghệ & Lập trình"
+    excerpt: "Chia sẻ kiến thức về web development, các công cụ và framework mới."
+    url: "/categories/#web-development"
+    btn_label: "Xem bài viết"
+    btn_class: "btn--primary"
+  - image_path: /assets/images/feature-personal.jpg
+    alt: "Cá nhân"
+    title: "Phát triển bản thân"
+    excerpt: "Những suy ngẫm, trải nghiệm và bài học từ cuộc sống hàng ngày."
+    url: "/categories/#blog"
+    btn_label: "Đọc ngay"
+    btn_class: "btn--primary"
+  - image_path: /assets/images/feature-tutorial.jpg
+    alt: "Hướng dẫn"
+    title: "Tutorial & Tips"
+    excerpt: "Hướng dẫn chi tiết và những mẹo hay trong học tập và làm việc."
+    url: "/categories/#tutorial"
+    btn_label: "Học ngay"
+    btn_class: "btn--primary"
 ---
+
+{% include feature_row id="intro" type="center" %}
+
+{% include feature_row %}
