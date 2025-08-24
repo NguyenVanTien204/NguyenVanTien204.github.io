@@ -1,6 +1,7 @@
 ---
 title: "Jekyll với Minimal Mistakes - Hướng dẫn tùy chỉnh giao diện"
 date: 2025-01-24 12:00:00 +0700
+layout: single
 categories:
   - web-development
   - tutorial

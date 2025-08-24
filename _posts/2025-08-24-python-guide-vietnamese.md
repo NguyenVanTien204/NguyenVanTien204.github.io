@@ -1,6 +1,7 @@
 ---
 title: "Khám phá thế giới lập trình với Python"
 date: 2025-08-24 08:00:00 +0700
+layout: single
 categories:
   - programming
   - python
