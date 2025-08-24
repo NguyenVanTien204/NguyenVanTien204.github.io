@@ -869,16 +869,10 @@ code {
 
 // Fix cho các element bị stretch
 .feature__wrapper,
-.entries-list {
-  max-width: 100%;
-  overflow-x: hidden;
-}
-
-// Ensure theme's layout system works properly
+.entries-list,
 .page__content {
   max-width: 100%;
   overflow-x: hidden;
-  // Don't override width or max-width here
 }
 
 .archive__item {
@@ -898,7 +892,13 @@ code {
   hyphens: auto;
 }
 
-// Feature items constraints only (don't override theme's container)
+// Container constraints
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1em;
+}
+
 .feature__items {
   max-width: 1200px;
   margin: 0 auto;
@@ -1234,7 +1234,7 @@ img {
   border-radius: 12px !important;
   box-shadow: var(--shadow-sm) !important;
   transition: all 0.3s ease !important;
-
+  
   &:hover {
     box-shadow: var(--shadow-lg) !important;
     border-color: var(--primary-light) !important;
@@ -1250,7 +1250,7 @@ img {
   box-shadow: none !important;
   border-radius: 0 !important;
   padding: 2em !important;
-
+  
   &:hover {
     background: transparent !important;
     border: none !important;
@@ -1264,7 +1264,7 @@ img {
   background: transparent !important;
   border: none !important;
   box-shadow: none !important;
-
+  
   &:hover {
     background: transparent !important;
     border: none !important;
