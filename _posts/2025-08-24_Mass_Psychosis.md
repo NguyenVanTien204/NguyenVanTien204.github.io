@@ -3,19 +3,20 @@ title: "Hiện tượng tẩy não tập thể (Mass Psychosis) dưới lăng k�
 date: 2025-08-24 10:00:00 +0700
 layout: single
 categories:
-  - CaseStudy
+  - case-study
 tags:
-  - philosophy
-  - writing
+  - philosophy
+  - writing
 author_profile: true
 classes: wide
 excerpt: "Bàn về hiện tượng tẩy não tập thể trong xã hội hiện đại dưới ví dụ Hang động của Plato."
 header:
-  overlay_color: "#000"
-  overlay_filter: "0.5"
-  overlay_image: /assets/images/header-welcome.jpg
-  caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
+  overlay_color: "#000"
+  overlay_filter: 0.5
+  overlay_image: /assets/images/header-welcome.jpg
+  caption: 'Photo credit: [**Unsplash**](https://unsplash.com)'
 ---
+
 
 ## **Giới thiệu**
 ### **1. Bối cảnh**
