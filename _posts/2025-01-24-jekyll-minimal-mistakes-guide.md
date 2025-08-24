@@ -11,6 +11,7 @@ tags:
   - Blog
   - GitHub Pages
 author_profile: true
+classes: wide
 excerpt: "Hướng dẫn chi tiết cách tùy chỉnh giao diện Jekyll với theme Minimal Mistakes để tạo blog cá nhân đẹp mắt."
 header:
   overlay_color: "#333"

@@ -11,6 +11,7 @@ tags:
   - tutorial
   - lập trình
 author_profile: true
+classes: wide
 excerpt: "Hành trình khám phá Python - ngôn ngữ lập trình thân thiện và mạnh mẽ cho người mới bắt đầu."
 header:
   overlay_color: "#000"

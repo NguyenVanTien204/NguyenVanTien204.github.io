@@ -9,6 +9,7 @@ tags:
   - update
   - giới thiệu
 author_profile: true
+classes: wide
 excerpt: "Bài viết đầu tiên trên blog cá nhân của tôi, nơi tôi sẽ chia sẻ những suy nghĩ và trải nghiệm."
 header:
   overlay_color: "#000"
