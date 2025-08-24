@@ -34,16 +34,16 @@ enable_copy_code_button  : true # true, false (default)
 copyright                : "© 2025 Naïvellé" # "copyright" name, defaults to site.title
 copyright_url            : # "copyright" URL, defaults to site.url
 comments:
-  provider               : "utterances" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
+  provider               : "facebook" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
   disqus:
     shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
     # https://developers.facebook.com/docs/plugins/comments
-    appid                :
-    num_posts            : # 5 (default)
-    colorscheme          : # "light" (default), "dark"
+    appid                : # Để trống để dùng default hoặc tạo Facebook App ID
+    num_posts            : 10 # 5 (default)
+    colorscheme          : "light" # "light" (default), "dark"
   utterances:
     theme                : "github-light" # "github-light" (default), "github-dark"
     issue_term           : "pathname" # "pathname" (default)
@@ -94,7 +94,7 @@ twitter:
   username               :
 facebook:
   username               : Nguyễn Tiến  (Naïvellé)
-  app_id                 :
+  app_id                 : # Thêm Facebook App ID của bạn ở đây nếu có
   publisher              :
 og_image                 : "/assets/images/avt.png" # Open Graph/Twitter default site image
 # For specifying social profiles
@@ -214,8 +214,13 @@ sass:
 
 
 # Outputting
-permalink: /:categories/:title/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+permalink: /:year/:month/:day/:title/
+timezone: Asia/Ho_Chi_Minh # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+
+# Posts settings
+future: false # Don't publish posts with future dates
+show_drafts: false # Don't show draft posts
+limit_posts: 0 # No limit on posts
 
 
 # Pagination with jekyll-paginate
