@@ -5,6 +5,7 @@ permalink: /tags/
 author_profile: true
 sidebar:
   nav: "main"
+classes: wide
 ---
 
 <div class="blog-tags">

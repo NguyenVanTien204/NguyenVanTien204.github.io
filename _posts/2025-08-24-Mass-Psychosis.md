@@ -12,7 +12,7 @@ classes: wide
 excerpt: "Bàn về hiện tượng tẩy não tập thể trong xã hội hiện đại dưới ví dụ Hang động của Plato."
 header:
   overlay_color: "#000"
-  overlay_filter: 0.5
+  overlay_filter: "0.5"
   overlay_image: /assets/images/header-welcome.jpg
   caption: 'Photo credit: [**Unsplash**](https://unsplash.com)'
 ---
@@ -61,7 +61,7 @@ Chỉ khi một tù nhân được giải thoát, quay đầu lại, rời khỏ
 - Hang động đại diện cho **thế giới cảm tính** mà con người tiếp cận qua giác quan – vốn dễ bị lừa dối.
 - Bóng trên tường là những **mô hình thực tại được dựng lên** bởi các trung gian (trong thời hiện đại: truyền thông, thuật toán).
 - Thực tại đích thực chỉ có thể đạt được thông qua **lý trí và tri thức triết học**, tức **sự phản tư sâu sắc**.
-##### **b. Chính trị (Political Allegory): Thống trị bằng vô minh** 
+##### **b. Chính trị (Political Allegory): Thống trị bằng vô minh**
 - Những kẻ tạo ra bóng (người điều khiển hình nộm) có thể được hiểu là **tầng lớp cầm quyền, hệ thống tuyên truyền, các nhà thiết kế tư tưởng**.
 - Việc kiểm soát nhận thức đám đông không cần đến vũ lực, chỉ cần **kiểm soát nhận thức về cái gì là “thật”**.
 - Plato khẳng định: kẻ thống trị thành công nhất là **kẻ khiến nô lệ không biết mình bị nô lệ**.
@@ -69,4 +69,4 @@ Chỉ khi một tù nhân được giải thoát, quay đầu lại, rời khỏ
 - Người thoát khỏi hang là hình tượng của **triết gia**, người có nhiệm vụ đi tìm **chân lý phổ quát** vượt khỏi thế giới cảm tính.
 - Tuy nhiên, anh ta **không được hoan nghênh khi trở lại**: người trong hang **chống lại sự thật**, bởi họ **đồng nhất bản thân với bóng tối**.
 - Đây là một chỉ trích sâu sắc của Plato về **sự bảo thủ tập thể** và **tính trì trệ trong thay đổi nhận thức xã hội**.
- 
+
