@@ -1,16 +1,15 @@
 ---
 title: "Hiện tượng tẩy não tập thể (Mass Psychosis) dưới lăng kính của Plato (Hang động)"
-date: 2025-01-24 10:00:00 +0700
+date: 2025-08-24 10:00:00 +0700
 layout: single
 categories:
-  - blog
+  - CaseStudy
 tags:
-  - Jekyll
-  - update
-  - giới thiệu
+  - philosophy
+  - writing
 author_profile: true
 classes: wide
-excerpt: "Bài viết đầu tiên trên blog cá nhân của tôi, nơi tôi sẽ chia sẻ những suy nghĩ và trải nghiệm."
+excerpt: "Bàn về hiện tượng tẩy não tập thể trong xã hội hiện đại dưới ví dụ Hang động của Plato."
 header:
   overlay_color: "#000"
   overlay_filter: "0.5"
