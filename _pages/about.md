@@ -25,9 +25,9 @@ sidebar:
       📍 **Địa chỉ**: Thanh Oai - Hà Nội - Việt Nam
   - title: "Kỹ năng chính"
     text: |
-      💻 **Lập trình**: Python, JavaScript, HTML/CSS
+      💻 **Lập trình**: Python, Java
 
-      🌐 **Web**: React, Node.js, Jekyll
+      🌐 **Big Data**: Apache Spark, Apache Kafka, Apache Airflow
 
       📊 **Dữ liệu**: Pandas, NumPy, Data Analysis
 
@@ -66,7 +66,7 @@ Chào mừng bạn đến với **Naïvellé** - không gian cá nhân nơi tôi
 
 ### 🚀 Câu chuyện của tôi
 
-Tôi là **Nguyễn Văn Tiến**, một developer đam mê công nghệ và yêu thích việc học hỏi những điều mới mẻ. Hành trình của tôi bắt đầu từ một sinh viên tò mò về thế giới số, và giờ đây tôi đang theo đuổi passion của mình trong lĩnh vực phát triển phần mềm.
+Tôi là **Nguyễn Văn Tiến**, một developer đam mê công nghệ và yêu thích việc viết lách. Hành trình của tôi bắt đầu từ một sinh viên tò mò về thế giới số, và giờ đây tôi đang theo đuổi passion của mình trong lĩnh vực phát triển phần mềm cũng như sáng tạo nội dung.
 
 > *"Học không bao giờ là đủ, chia sẻ mới là hoàn thiện"*
 
@@ -76,8 +76,8 @@ Tôi tin rằng kiến thức chỉ có giá trị khi được chia sẻ. Blog 
 
 - **Ghi chép hành trình học tập** - Mỗi bài viết là một cột mốc trong quá trình phát triển
 - **Chia sẻ kinh nghiệm thực tế** - Những gì tôi học được từ các dự án và challenges
-- **Kết nối cộng đồng** - Tạo không gian thảo luận và học hỏi lẫn nhau
-- **Truyền cảm hứng** - Động viên những người cùng đam mê công nghệ
+- **Kết nối cộng đồng** - Tạo không gian thảo luận và sáng tác nội dung số
+- **Truyền cảm hứng** - Động viên những người cùng đam mê viết lách và công nghệ
 
 {% include feature_row %}
 
@@ -87,13 +87,13 @@ Tôi tin rằng kiến thức chỉ có giá trị khi được chia sẻ. Blog 
 
 Hiện tại tôi đang tập trung vào:
 
-- **Frontend Development**: Tạo ra những giao diện người dùng đẹp mắt và thân thiện
+- **Data Engineer**: Tạo ra những giải pháp cho các hệ thống dữ liệu lớn
 - **Backend Development**: Xây dựng các API và hệ thống backend robust
 - **Data Analysis**: Khám phá và phân tích dữ liệu để tìm ra insights có giá trị
 
 ### ✍️ Viết lách & Chia sẻ
 
-- **Technical Writing**: Viết tài liệu kỹ thuật và hướng dẫn
+- **Essay Writing**: Viết các bài luận về chủ đề xã hội và tâm lý học
 - **Blogging**: Chia sẻ kinh nghiệm và kiến thức qua blog cá nhân
 - **Community Building**: Tham gia và đóng góp cho cộng đồng developer Việt Nam
 
@@ -104,6 +104,7 @@ Tôi luôn trong trạng thái học hỏi với các lĩnh vực:
 - **Machine Learning & AI**: Khám phá thế giới trí tuệ nhân tạo
 - **Cloud Technologies**: AWS, Azure, và các platform cloud khác
 - **DevOps**: CI/CD, containerization và automation
+- **Data Science**: Khám phá thế giới rộng lớn của dữ liệu
 
 ## 📚 Blog của tôi
 
@@ -127,11 +128,10 @@ Tôi luôn trong trạng thái học hỏi với các lĩnh vực:
 - Course recommendations
 - Learning resources
 
-### �️ Project Showcases
-- Demo các dự án cá nhân
-- Code walkthroughs
-- Technical challenges
-- Lessons learned
+### �️ CaseStudy
+- Các bài viết mang tính nghiên cứu về các vấn đề xã hội
+- Các bài viết, sáng tác văn học, thơ
+
 
 ## 🎨 Tại sao "Naïvellé"?
 
@@ -146,19 +146,19 @@ Tên blog là sự kết hợp độc đáo giữa:
 
 {% include gallery caption="Những cột mốc quan trọng trong hành trình phát triển" %}
 
-### 🎓 Thời sinh viên (2018-2022)
+### 🎓 Thời sinh viên (2022-2025)
 - Khám phá lập trình lần đầu với C++
-- Học web development với HTML, CSS, JavaScript
-- Tham gia các cuộc thi lập trình và hackathon
+- Học data với python
+- Tham gia các dự án nhỏ
 
-### 💼 Bước vào thế giới công nghệ (2022-2024)
+### 💼 Bước vào thế giới công nghệ (2023-2025)
 - Làm quen với Python và data science
-- Học React và modern web development
-- Contribute cho các open source projects
+- Học java và modern web development
+- Học các công cụ về xử lý dữ liệu theo thời gian thực
 
 ### 🚀 Hiện tại (2025)
 - Ra mắt blog Naïvellé
-- Tập trung vào full-stack development
+- Tập trung vào hướng data engineer
 - Chia sẻ kiến thức qua content creation
 
 ## 🤝 Hãy kết nối với tôi!
