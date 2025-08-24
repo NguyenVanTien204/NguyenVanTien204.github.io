@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+<h1>Debug Posts</h1>
+
+<h2>Site Posts Count: {{ site.posts.size }}</h2>
+
+<h3>All Posts:</h3>
+{% for post in site.posts %}
+<div style="border: 1px solid #ccc; margin: 10px; padding: 10px;">
+  <h4>{{ post.title }}</h4>
+  <p>Date: {{ post.date }}</p>
+  <p>URL: {{ post.url }}</p>
+  <p>Categories: {{ post.categories | join: ", " }}</p>
+  <p>Tags: {{ post.tags | join: ", " }}</p>
+  <p>Excerpt: {{ post.excerpt | strip_html | truncatewords: 20 }}</p>
+</div>
+{% endfor %}
+
+<h3>Site Data:</h3>
+<p>Site URL: {{ site.url }}</p>
+<p>Base URL: {{ site.baseurl }}</p>
+<p>Time: {{ site.time }}</p>
