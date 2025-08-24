@@ -582,16 +582,16 @@ code {
     border-radius: 16px !important;
     overflow: hidden;
     transition: all 0.3s ease;
-    box-shadow: var(--shadow-card) !important;
+    box-shadow: var(--shadow-sm) !important; // Force consistent shadow
     display: flex;
     flex-direction: column;
-    min-height: 250px; // Reduced from 320px for better proportions
-    padding: 0 !important;
+    min-height: 320px;
+    padding: 0 !important; // Reset padding for feature cards
     margin-bottom: 2em !important;
 
     &:hover {
-      transform: translateY(-4px) !important;
-      box-shadow: var(--shadow-hover) !important;
+      transform: translateY(-8px) !important;
+      box-shadow: var(--shadow-xl) !important;
       border-color: var(--primary-light) !important;
     }
 
@@ -1224,28 +1224,33 @@ img {
   }
 }
 
-/* ===== FINAL FEATURE CARD SYSTEM - NO DUPLICATES ===== */
-// Only feature cards get special styling - using proper shadow variables
-.feature__wrapper .feature__item {
-  // Override any theme defaults
-  min-height: 250px !important; // Balanced height for better proportions
-
-  // For responsive design - reduce height on mobile
-  @media (max-width: 768px) {
-    min-height: auto !important; // Let content determine height on mobile
-    margin-bottom: 1.5rem !important;
+/* ===== SIMPLE AND CLEAN STYLING - NO DUPLICATES ===== */
+// ONLY style the containers that should have shadows
+.feature__wrapper .feature__item,
+.entries-list .list__item,
+.archive .archive__item {
+  background: var(--bg-card) !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: 12px !important;
+  box-shadow: var(--shadow-sm) !important;
+  transition: all 0.3s ease !important;
+  
+  &:hover {
+    box-shadow: var(--shadow-lg) !important;
+    border-color: var(--primary-light) !important;
+    transform: translateY(-2px) !important;
   }
 }
 
-// Ensure nested archive items have NO styling to prevent duplicates
-.feature__item .archive__item {
+// Remove styling from nested elements completely
+.feature__item .archive__item,
+.list__item .archive__item {
   background: transparent !important;
   border: none !important;
   box-shadow: none !important;
   border-radius: 0 !important;
   padding: 2em !important;
-  min-height: auto !important;
-
+  
   &:hover {
     background: transparent !important;
     border: none !important;
@@ -1254,392 +1259,16 @@ img {
   }
 }
 
-/* ===== CLEAN LAYOUT SYSTEM CHO SIDEBAR NAVIGATION ===== */
-// Override minimal-mistakes default layout hoàn toàn
-.layout--single {
-  // Reset theme container
-  max-width: none !important;
-
-  // Main page wrapper
-  .initial-content {
-    max-width: none !important;
-    padding: 0 !important;
-  }
-
-  // Main content wrapper
-  .page {
-    max-width: 1200px !important;
-    margin: 0 auto !important;
-    padding: 0 20px !important;
-    display: flex !important;
-    gap: 30px !important;
-    align-items: flex-start !important;
-  }
-
-  // Sidebar styling
-  .sidebar {
-    width: 240px !important;
-    flex-shrink: 0 !important;
-    margin: 0 !important;
-    padding: 0 !important;
-
-    &.sticky {
-      position: sticky !important;
-      top: 2em !important;
-    }
-  }
-
-  // Main content area
-  .page__inner-wrap {
-    flex: 1 !important;
-    width: auto !important;
-    max-width: none !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    min-width: 0 !important;
-  }
-
-  .page__content {
-    max-width: none !important;
-    width: 100% !important;
-    margin: 0 !important;
-    padding: 0 !important;
-  }
-
-  // Page header
-  .page__title {
-    margin: 0 0 1.5em 0 !important;
-    padding: 0 !important;
-  }
-}
-
-// Mobile first - hide sidebar on mobile
-@media (max-width: 767px) {
-  .layout--single {
-    .page {
-      display: block !important;
-      padding: 0 15px !important;
-    }
-
-    .sidebar {
-      display: none !important;
-    }
-
-    .page__inner-wrap {
-      width: 100% !important;
-    }
-  }
-}
-
-// Clean archive styling - target custom classes
-.blog-categories, .blog-tags {
-  // Reset all margins and padding
-  margin: 0 !important;
-  padding: 0 !important;
-  width: 100% !important;
-
-  .blog-header {
-    margin: 0 0 2em 0 !important;
-    padding: 0 !important;
-    text-align: center !important;
-
-    .blog-title {
-      font-size: 1.8em !important;
-      margin: 0 0 0.5em 0 !important;
-      color: var(--primary-color) !important;
-      padding: 0 !important;
-    }
-
-    .blog-subtitle {
-      font-size: 1em !important;
-      color: var(--text-muted) !important;
-      margin: 0 0 1.5em 0 !important;
-      padding: 0 !important;
-    }
-  }
-
-  .blog-search {
-    max-width: 500px !important;
-    margin: 0 auto 2em auto !important;
-    position: relative !important;
-    padding: 0 !important;
-
-    .blog-search__input {
-      font-size: 1em !important;
-      padding: 14px 18px 14px 45px !important;
-      border: 2px solid var(--border-color) !important;
-      border-radius: 10px !important;
-      transition: all 0.3s ease !important;
-      width: 100% !important;
-      box-sizing: border-box !important;
-      margin: 0 !important;
-
-      &:focus {
-        border-color: var(--primary-color) !important;
-        box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1) !important;
-        outline: none !important;
-      }
-    }
-
-    .blog-search__icon {
-      position: absolute !important;
-      left: 15px !important;
-      top: 50% !important;
-      transform: translateY(-50%) !important;
-      color: var(--text-muted) !important;
-      font-size: 1em !important;
-    }
-  }
-
-  .blog-categories-list, .blog-tags-content {
-    margin: 0 !important;
-    padding: 0 !important;
-    width: 100% !important;
-  }
-
-  .blog-category-item {
-    margin: 0 0 1.5em 0 !important;
-    border: 1px solid var(--border-color) !important;
-    border-radius: 10px !important;
-    overflow: hidden !important;
-    box-shadow: var(--shadow-sm) !important;
-    width: 100% !important;
-    box-sizing: border-box !important;
-
-    .blog-category-header {
-      font-size: 1.1em !important;
-      padding: 16px 20px !important;
-      background: var(--bg-secondary) !important;
-      border-bottom: 1px solid var(--border-color) !important;
-      cursor: pointer !important;
-      font-weight: 500 !important;
-      margin: 0 !important;
-      display: flex !important;
-      justify-content: space-between !important;
-      align-items: center !important;
-
-      &:hover {
-        background: var(--hover-bg) !important;
-      }
-
-      .blog-category-name {
-        color: var(--text-color) !important;
-        margin: 0 !important;
-      }
-
-      .blog-category-count {
-        color: var(--text-muted) !important;
-        font-size: 0.9em !important;
-        background: var(--bg-card) !important;
-        padding: 4px 8px !important;
-        border-radius: 12px !important;
-        border: 1px solid var(--border-color) !important;
-      }
-
-      .blog-category-toggle {
-        color: var(--text-muted) !important;
-        font-size: 1.2em !important;
-        transition: transform 0.3s ease !important;
-      }
-    }
-
-    .blog-category-posts {
-      display: none !important;
-      padding: 0 !important;
-      margin: 0 !important;
-
-      &.show {
-        display: block !important;
-      }
-
-      .blog-post-item {
-        padding: 12px 20px !important;
-        margin: 0 !important;
-        border-bottom: 1px solid var(--border-light) !important;
-        transition: background-color 0.3s ease !important;
-
-        &:last-child {
-          border-bottom: none !important;
-        }
-
-        &:hover {
-          background: var(--hover-bg) !important;
-        }
-
-        .blog-post-title {
-          font-size: 1em !important;
-          margin: 0 0 4px 0 !important;
-          line-height: 1.4 !important;
-
-          a {
-            color: var(--text-color) !important;
-            text-decoration: none !important;
-
-            &:hover {
-              color: var(--primary-color) !important;
-            }
-          }
-        }
-
-        .blog-post-excerpt {
-          font-size: 0.9em !important;
-          color: var(--text-muted) !important;
-          margin: 0 !important;
-        }
-
-        .blog-post-date {
-          font-size: 0.85em !important;
-          color: var(--text-muted) !important;
-          margin: 4px 0 0 0 !important;
-        }
-      }
-    }
-  }
-
-  .blog-tag-cloud {
-    margin: 0 0 3em 0 !important;
-    text-align: center !important;
-    padding: 0 !important;
-
-    h2 {
-      font-size: 1.6em !important;
-      margin: 0 0 1.5em 0 !important;
-      color: var(--text-color) !important;
-    }
-
-    .blog-tag {
-      margin: 6px !important;
-      padding: 8px 16px !important;
-      font-size: 0.9em !important;
-      border: 1px solid var(--border-color) !important;
-      border-radius: 25px !important;
-      background: var(--bg-card) !important;
-      transition: all 0.3s ease !important;
-      text-decoration: none !important;
-      color: var(--text-color) !important;
-      display: inline-block !important;
-
-      &:hover {
-        background: var(--primary-color) !important;
-        color: white !important;
-        border-color: var(--primary-color) !important;
-        transform: translateY(-2px) !important;
-      }
-    }
-  }
-
-  .blog-popular-tags {
-    margin: 0 !important;
-    padding: 0 !important;
-
-    h3 {
-      font-size: 1.4em !important;
-      margin: 0 0 1.5em 0 !important;
-      color: var(--text-color) !important;
-      text-align: center !important;
-    }
-
-    .blog-popular-tags-container {
-      display: flex !important;
-      flex-wrap: wrap !important;
-      justify-content: center !important;
-      gap: 8px !important;
-      margin: 0 !important;
-      padding: 0 !important;
-    }
-
-    .blog-popular-tag {
-      font-size: 0.95em !important;
-      padding: 10px 16px !important;
-      background: var(--bg-secondary) !important;
-      border: 1px solid var(--border-color) !important;
-      border-radius: 8px !important;
-      text-decoration: none !important;
-      color: var(--text-color) !important;
-      transition: all 0.3s ease !important;
-      margin: 0 !important;
-
-      &:hover {
-        background: var(--primary-color) !important;
-        color: white !important;
-        border-color: var(--primary-color) !important;
-        transform: translateY(-1px) !important;
-      }
-    }
-  }
-}
-
-// Responsive enhancements
-@media (min-width: 768px) {
-  .layout--single .page {
-    max-width: 1000px !important;
-    gap: 25px !important;
-  }
-
-  .layout--single .sidebar {
-    width: 220px !important;
-  }
-
-  .blog-categories, .blog-tags {
-    .blog-header .blog-title {
-      font-size: 2em !important;
-    }
-
-    .blog-search {
-      max-width: 500px !important;
-    }
-  }
-}
-
-@media (min-width: 1024px) {
-  .layout--single .page {
-    max-width: 1200px !important;
-    gap: 40px !important;
-    padding: 0 40px !important;
-  }
-
-  .layout--single .sidebar {
-    width: 250px !important;
-  }
-
-  .blog-categories, .blog-tags {
-    .blog-header .blog-title {
-      font-size: 2.2em !important;
-    }
-
-    .blog-search {
-      max-width: 600px !important;
-    }
-
-    .blog-category-header {
-      font-size: 1.15em !important;
-      padding: 16px 22px !important;
-    }
-
-    .blog-tag, .blog-popular-tag {
-      font-size: 1em !important;
-      padding: 10px 16px !important;
-    }
-  }
-}
-
-@media (min-width: 1200px) {
-  .layout--single .page {
-    max-width: 1400px !important;
-    gap: 50px !important;
-  }
-
-  .layout--single .sidebar {
-    width: 280px !important;
-  }
-
-  .blog-categories, .blog-tags {
-    .blog-header .blog-title {
-      font-size: 2.4em !important;
-    }
-
-    .blog-search {
-      max-width: 700px !important;
-    }
+// Intro section special handling
+.feature__wrapper--intro .archive__item {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  
+  &:hover {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    transform: none !important;
   }
 }

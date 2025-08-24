@@ -24,7 +24,7 @@ classes: wide
     <div class="container">
       <h2 class="section-title">Khám phá nội dung</h2>
       <p class="section-subtitle">Những chủ đề chính mà blog tập trung chia sẻ</p>
-      
+
       <div class="features-grid">
         <!-- Card 1: Công nghệ -->
         <div class="feature-card">
@@ -100,7 +100,7 @@ classes: wide
     <div class="container">
       <h2 class="section-title">Bài viết mới nhất</h2>
       <p class="section-subtitle">Những chia sẻ gần đây nhất từ blog</p>
-      
+
       <div class="posts-grid">
         {% for post in site.posts limit:3 %}
         <article class="post-card">
@@ -125,7 +125,7 @@ classes: wide
         </article>
         {% endfor %}
       </div>
-      
+
       <div class="section-actions">
         <a href="/posts/" class="btn btn--primary btn--large">Xem tất cả bài viết</a>
       </div>
@@ -520,41 +520,41 @@ classes: wide
   .hero-section {
     padding: 3rem 1rem 2.5rem;
   }
-  
+
   .hero-title {
     font-size: 2.2rem;
   }
-  
+
   .hero-subtitle {
     font-size: 1rem;
   }
-  
+
   .features-grid {
     grid-template-columns: 1fr;
     gap: 1.5rem;
   }
-  
+
   .posts-grid {
     grid-template-columns: 1fr;
     gap: 1.2rem;
   }
-  
+
   .hero-actions,
   .newsletter-actions {
     flex-direction: column;
     align-items: center;
     gap: 0.8rem;
   }
-  
+
   .section-title {
     font-size: 1.8rem;
   }
-  
+
   .features-section,
   .recent-posts-section {
     padding: 3rem 1rem;
   }
-  
+
   .newsletter-section {
     padding: 2.5rem 1rem;
   }
@@ -564,12 +564,12 @@ classes: wide
   .hero-title {
     font-size: 1.9rem;
   }
-  
+
   .feature-card,
   .post-card {
     padding: 1.5rem;
   }
-  
+
   .btn--hero,
   .btn--hero-outline {
     padding: 0.7rem 1.5rem;
