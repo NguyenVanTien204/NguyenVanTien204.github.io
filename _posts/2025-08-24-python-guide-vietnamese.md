@@ -4,7 +4,6 @@ date: 2025-08-24 08:00:00 +0700
 layout: single
 categories:
   - programming
-  - python
 tags:
   - Python
   - beginner
