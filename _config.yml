@@ -326,3 +326,10 @@ defaults:
     values:
       layout: single
       author_profile: true
+
+# Custom CSS and JS
+head_scripts:
+  - /assets/js/improved-taxonomy.js
+
+after_footer_scripts:
+  - /assets/js/improved-taxonomy.js
