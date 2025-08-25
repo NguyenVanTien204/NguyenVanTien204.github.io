@@ -3,9 +3,9 @@ title: "Lạc lối giữa muôn vàn cơ hội"
 date: 2025-08-25 14:35:00 +0700
 layout: single
 categories:
-  - case-study
+  - Social
 tags:
-  - philosophy
+  - Psychology
   - writing
 author_profile: true
 classes: wide
