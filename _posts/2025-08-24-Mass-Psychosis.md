@@ -9,7 +9,7 @@ tags:
   - writing
 author_profile: true
 classes: wide
-excerpt: "Bàn về hiện tượng tẩy não tập thể trong xã hội hiện đại dưới ví dụ Hang động của Plato."
+excerpt: "Một hành trình từ bóng tối hang động của Plato đến hiện tượng tẩy não tập thể, giải mã cách con người dễ dàng chấp nhận ảo tưởng thay cho sự thật."
 header:
   overlay_color: "#000"
   overlay_filter: "0.5"
