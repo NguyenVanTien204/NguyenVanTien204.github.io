@@ -35,67 +35,66 @@ Khám phá tất cả các tags được sử dụng trong blog. Tags giúp bạ
     </div>
   </div>
 
-  <div class="intro-description">
-    <p>Tags được tổ chức theo độ phổ biến và chủ đề. Sử dụng chế độ Tag Cloud để thấy trực quan các chủ đề được quan tâm nhất, hoặc chuyển sang chế độ Grid/List để xem chi tiết hơn.</p>
-  </div>
-</div>
 
 <style>
 .taxonomy-intro {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
-  border-radius: 15px;
-  padding: 2rem;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  color: #495057;
+  border: 2px solid #dee2e6;
+  border-radius: 12px;
+  padding: 1.5rem;
   margin-bottom: 2rem;
-  box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
 
 .tags-intro {
-  background: linear-gradient(135deg, #8b5cf6 0%, #06b6d4 50%, #10b981 100%);
-  box-shadow: 0 10px 30px rgba(139, 92, 246, 0.3);
+  background: linear-gradient(135deg, #f3e5f5 0%, #e1f5fe 100%);
+  border: 2px solid #ce93d8;
 }
 
 .intro-stats {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 1.5rem;
-  margin-bottom: 2rem;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .stat-item {
   text-align: center;
   padding: 1rem;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 12px;
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  transition: all 0.3s ease;
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+  border: 2px solid #e9ecef;
+  border-radius: 8px;
+  transition: all 0.2s ease;
 }
 
 .stat-item:hover {
-  transform: translateY(-2px);
-  background: rgba(255, 255, 255, 0.2);
+  background: linear-gradient(135deg, #fff3e0 0%, #e8f5e8 100%);
+  border-color: #ffb74d;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 .stat-item i {
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-bottom: 0.5rem;
   display: block;
-  opacity: 0.9;
+  color: #7e57c2;
 }
 
 .stat-number {
   display: block;
-  font-size: 2rem;
-  font-weight: 700;
+  font-size: 1.5rem;
+  font-weight: 600;
   margin-bottom: 0.25rem;
+  color: #495057;
 }
 
 .stat-label {
-  font-size: 0.9rem;
-  opacity: 0.9;
+  font-size: 0.85rem;
+  color: #6c757d;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
 }
 
 .intro-description {

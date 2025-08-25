@@ -29,56 +29,61 @@ Khám phá tất cả các danh mục bài viết trên blog của tôi. Sử d�
     </div>
   </div>
 
-  <div class="intro-description">
-    <p>Các bài viết được tổ chức theo danh mục để bạn có thể dễ dàng tìm kiếm nội dung theo chủ đề quan tâm. Mỗi danh mục bao gồm những bài viết chất lượng với thông tin hữu ích và cập nhật.</p>
-  </div>
-</div>
 
 <style>
 .taxonomy-intro {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
-  border-radius: 15px;
-  padding: 2rem;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  color: #495057;
+  border: 2px solid #dee2e6;
+  border-radius: 12px;
+  padding: 1.5rem;
   margin-bottom: 2rem;
-  box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
 
 .intro-stats {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 1.5rem;
-  margin-bottom: 2rem;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .stat-item {
   text-align: center;
   padding: 1rem;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 12px;
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+  border: 2px solid #e9ecef;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.stat-item:hover {
+  background: linear-gradient(135deg, #e3f2fd 0%, #f3e5f5 100%);
+  border-color: #90caf9;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 .stat-item i {
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-bottom: 0.5rem;
   display: block;
-  opacity: 0.9;
+  color: #5c6bc0;
 }
 
 .stat-number {
   display: block;
-  font-size: 2rem;
-  font-weight: 700;
+  font-size: 1.5rem;
+  font-weight: 600;
   margin-bottom: 0.25rem;
+  color: #495057;
 }
 
 .stat-label {
-  font-size: 0.9rem;
-  opacity: 0.9;
+  font-size: 0.85rem;
+  color: #6c757d;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
 }
 
 .intro-description {
@@ -88,20 +93,20 @@ Khám phá tất cả các danh mục bài viết trên blog của tôi. Sử d�
 
 .intro-description p {
   margin: 0;
-  font-size: 1.1rem;
-  line-height: 1.6;
-  opacity: 0.95;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #6c757d;
 }
 
 @media (max-width: 768px) {
   .taxonomy-intro {
-    padding: 1.5rem;
+    padding: 1rem;
     margin-bottom: 1rem;
   }
 
   .intro-stats {
     grid-template-columns: 1fr;
-    gap: 1rem;
+    gap: 0.75rem;
   }
 
   .stat-item {
@@ -109,11 +114,11 @@ Khám phá tất cả các danh mục bài viết trên blog của tôi. Sử d�
   }
 
   .stat-number {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
 
   .intro-description p {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 }
 </style>

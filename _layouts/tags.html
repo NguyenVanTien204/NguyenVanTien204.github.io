@@ -90,7 +90,7 @@ layout: archive
           <div class="recent-posts">
             <h4>Bài viết gần đây:</h4>
             <ul class="recent-posts-list">
-              {% for post in tag[1] limit: 3 %}
+              {% for post in tag[1] limit: 1 %}
                 <li>
                   <a href="{{ post.url | relative_url }}" title="{{ post.title }}">
                     {{ post.title | truncate: 50 }}
@@ -124,7 +124,7 @@ layout: archive
         {% assign tag_data = tag[0] | append: ":" | append: tag[1].size %}
         {% assign tag_list = tag_list | push: tag_data %}
       {% endfor %}
-      
+
       {% comment %} Show first 6 tags {% endcomment %}
       {% assign counter = 0 %}
       {% for tag in site.tags %}
@@ -137,7 +137,7 @@ layout: archive
             <span class="popular-tag-count">{{ posts_count }}</span>
           </div>
           <div class="popular-tag-preview">
-            {% for post in tag[1] limit: 2 %}
+            {% for post in tag[1] limit: 1 %}
               <div class="preview-post">
                 <a href="{{ post.url | relative_url }}">{{ post.title | truncate: 40 }}</a>
               </div>
@@ -320,7 +320,7 @@ layout: archive
   text-align: center;
   line-height: 2.5;
   padding: 1rem;
-  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  background: #f8f9fa;
   border-radius: 12px;
   border: 2px dashed #dee2e6;
 }
@@ -329,8 +329,8 @@ layout: archive
   display: inline-block;
   margin: 0.375rem 0.5rem;
   padding: 0.5rem 1rem;
-  background: linear-gradient(135deg, #ffffff, #f8f9fa);
-  color: #495057;
+  background: #ffffff;
+  color: #477baf;
   border-radius: 25px;
   cursor: pointer;
   transition: all 0.4s ease;
@@ -348,7 +348,7 @@ layout: archive
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(59, 130, 246, 0.3), transparent);
+  background: rgba(108, 117, 125, 0.3);
   transition: left 0.5s ease;
 }
 
@@ -357,11 +357,11 @@ layout: archive
 }
 
 .tag-cloud-item:hover {
-  background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+  background: #6c757d;
   color: white;
   transform: scale(1.1) rotate(2deg);
-  border-color: #3b82f6;
-  box-shadow: 0 8px 20px rgba(59, 130, 246, 0.3);
+  border-color: #6c757d;
+  box-shadow: 0 8px 20px rgba(108, 117, 125, 0.3);
 }
 
 .tag-count {
@@ -400,7 +400,7 @@ layout: archive
   left: 0;
   width: 100%;
   height: 4px;
-  background: linear-gradient(90deg, #3b82f6, #8b5cf6, #06b6d4);
+  background: #6c757d;
 }
 
 .tag-card:hover {
@@ -420,7 +420,7 @@ layout: archive
 .tag-icon {
   width: 45px;
   height: 45px;
-  background: linear-gradient(135deg, #8b5cf6, #6366f1);
+  background: #6c757d;
   border-radius: 10px;
   display: flex;
   align-items: center;
@@ -440,8 +440,8 @@ layout: archive
 }
 
 .post-count {
-  background: linear-gradient(135deg, #ddd6fe, #c4b5fd);
-  color: #6d28d9;
+  background: #e9ecef;
+  color: #495057;
   padding: 0.375rem 0.75rem;
   border-radius: 20px;
   font-size: 0.875rem;
@@ -561,7 +561,7 @@ layout: archive
 }
 
 .popular-tag-card {
-  background: linear-gradient(135deg, #f8fafc, #e2e8f0);
+  background: #f8f9fa;
   border-radius: 10px;
   padding: 1.25rem;
   cursor: pointer;
@@ -578,13 +578,13 @@ layout: archive
   left: 0;
   width: 100%;
   height: 3px;
-  background: linear-gradient(90deg, #f59e0b, #ef4444, #8b5cf6);
+  background: #6c757d;
 }
 
 .popular-tag-card:hover {
   transform: translateY(-2px);
   box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-  background: linear-gradient(135deg, #ffffff, #f8fafc);
+  background: #f8f9fa;
 }
 
 .popular-tag-header {
@@ -602,7 +602,7 @@ layout: archive
 }
 
 .popular-tag-count {
-  background: linear-gradient(135deg, #fbbf24, #f59e0b);
+  background: #6c757d;
   color: white;
   padding: 0.25rem 0.75rem;
   border-radius: 15px;
