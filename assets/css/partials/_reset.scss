@@ -1,0 +1,66 @@
+/* ===== RESET ALL DEFAULT THEME SHADOWS AND BORDERS ===== */
+// UNIVERSAL RESET - Remove ALL shadows and borders from theme first
+* {
+  box-shadow: none !important;
+}
+
+// Reset all possible shadow sources from theme
+.archive__item,
+.list__item,
+.feature__item,
+.taxonomy__section,
+.page__content .archive__item,
+.entries-list .archive__item,
+.feature__wrapper .archive__item,
+.sidebar .author__avatar,
+.author__avatar {
+  box-shadow: none !important;
+  border: none !important;
+}
+
+// Override any theme backgrounds
+html {
+  background-color: var(--bg-color) !important;
+}
+
+.page {
+  background-color: var(--bg-color) !important;
+}
+
+.initial-content {
+  background-color: var(--bg-color) !important;
+}
+
+// Force light theme for all major containers
+.layout {
+  background-color: var(--bg-color) !important;
+}
+
+.page__content {
+  background-color: var(--bg-color) !important;
+  color: var(--text-color) !important;
+}
+
+.sidebar {
+  background-color: var(--bg-color) !important;
+}
+
+main {
+  background-color: var(--bg-color) !important;
+}
+
+// Override any theme dark elements
+.archive__item,
+.list__item,
+.entries-list .archive__item {
+  background-color: var(--bg-card) !important;
+  color: var(--text-color) !important;
+}
+
+.archive__item-title {
+  color: var(--secondary-color) !important;
+}
+
+.archive__item-excerpt {
+  color: var(--text-muted) !important;
+}

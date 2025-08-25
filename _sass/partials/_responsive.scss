@@ -1,0 +1,125 @@
+// Responsive improvements cho homepage
+@media (max-width: 1200px) {
+  .feature__wrapper {
+    .feature__items {
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5em;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .page__hero {
+    padding: 3em 0;
+
+    .page__title {
+      font-size: 2.5em;
+    }
+
+    .page__lead {
+      font-size: 1.2em;
+      margin-bottom: 2em;
+    }
+  }
+
+  .feature__wrapper {
+    padding: 2em 0;
+
+    .feature__items {
+      grid-template-columns: 1fr;
+      gap: 1.5em;
+    }
+
+    .archive__item-teaser {
+      height: 180px;
+    }
+  }
+
+  .feature__wrapper--intro {
+    padding: 2em 0;
+
+    .archive__item-excerpt {
+      font-size: 1.1em;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .page__hero {
+    padding: 2em 0;
+
+    .page__title {
+      font-size: 2em;
+    }
+
+    .page__lead {
+      font-size: 1.1em;
+    }
+  }
+
+  .feature__wrapper {
+    .archive__item-teaser {
+      height: 150px;
+    }
+
+    .archive__item-body {
+      padding: 1.5em;
+    }
+  }
+
+  .btn {
+    padding: 0.6em 1.4em;
+    font-size: 0.9em;
+  }
+}
+
+// Fix cho các element bị stretch
+.feature__wrapper,
+.entries-list {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+// Ensure theme's layout system works properly
+.page__content {
+  max-width: 100%;
+  overflow-x: hidden;
+  // Don't override width or max-width here
+}
+
+.archive__item {
+  word-wrap: break-word;
+  hyphens: auto;
+}
+
+.archive__item-title {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+.archive__item-excerpt {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+// Feature items constraints only (don't override theme's container)
+.feature__items {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+// Image responsive
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.archive__item-teaser img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}

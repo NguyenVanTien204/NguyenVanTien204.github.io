@@ -1,0 +1,79 @@
+// Archive pages với hover effects - Unified styling
+.archive__item {
+  border-radius: 12px !important;
+  padding: 1.5em !important;
+  margin-bottom: 1.5em !important;
+  background: var(--bg-card) !important;
+  border: 1px solid var(--border-color) !important;
+  transition: all 0.3s ease;
+  box-shadow: none !important; // Force remove all default shadows
+
+  &:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1) !important;
+    border-color: var(--primary-light) !important;
+  }
+}
+
+.archive__item-title {
+  color: var(--secondary-color);
+  font-weight: 600;
+
+  &:hover {
+    color: var(--primary-color);
+  }
+}
+
+.archive__item-excerpt {
+  color: var(--text-muted);
+  margin-top: 0.5em;
+}
+
+// Sidebar cải thiện
+.sidebar {
+  .author__avatar {
+    border: none !important; // Bỏ border xanh
+    border-radius: 50%;
+    box-shadow: none !important; // Bỏ hoàn toàn shadow
+    transition: none; // Bỏ transition
+    background: transparent !important; // Đảm bảo background trong suốt
+
+    &:hover {
+      transform: none !important; // Bỏ scale effect
+      box-shadow: none !important; // Bỏ hover shadow
+    }
+  }
+
+  .author__name {
+    color: var(--secondary-color);
+    font-weight: 600;
+    font-size: 1.2em;
+  }
+
+  .author__bio {
+    font-size: 0.95em;
+    color: var(--text-muted);
+    margin-top: 0.8em;
+    line-height: 1.6;
+  }
+
+  .author__urls {
+    .nav__items {
+      li {
+        margin-bottom: 0.5em;
+
+        a {
+          color: var(--text-muted);
+          transition: all 0.3s ease;
+          border-radius: 20px;
+          padding: 0.4em 0.8em;
+
+          &:hover {
+            color: var(--primary-color);
+            background: var(--hover-bg);
+          }
+        }
+      }
+    }
+  }
+}

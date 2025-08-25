@@ -1,0 +1,16 @@
+// Typography với font hỗ trợ tiếng Việt tốt
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  color: var(--text-color);
+  line-height: 1.7;
+  background-color: var(--bg-color) !important;
+}
+
+// Headings với font serif đẹp
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Crimson Text', Georgia, serif;
+  font-weight: 600;
+  color: var(--secondary-color);
+  line-height: 1.3;
+}

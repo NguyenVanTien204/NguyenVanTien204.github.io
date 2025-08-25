@@ -1,0 +1,62 @@
+// Color palette hiện đại - Light theme
+:root {
+  --primary-color: #3b82f6;      // Modern blue
+  --primary-light: #60a5fa;      // Light blue
+  --primary-dark: #1d4ed8;       // Dark blue
+  --secondary-color: #1e293b;    // Dark slate (giữ lại cho contrast)
+  --accent-color: #f59e0b;       // Warm amber
+  --accent-secondary: #ef4444;   // Modern red
+  --success-color: #10b981;      // Emerald green
+  --warning-color: #f59e0b;      // Amber
+
+  // Text colors - Light theme
+  --text-color: #374151;         // Soft dark gray
+  --text-muted: #9ca3af;         // Light gray
+  --text-light: #ffffff;         // White text
+
+  // Background colors - Light dominant
+  --bg-color: #ffffff;           // Pure white
+  --bg-secondary: #f9fafb;       // Very light gray
+  --bg-tertiary: #f3f4f6;        // Light gray
+  --bg-card: #ffffff;            // Card background
+
+  // Border and hover
+  --border-color: #e5e7eb;       // Light border
+  --border-light: #f3f4f6;       // Very light border
+  --hover-bg: #f8fafc;           // Hover background
+  --hover-primary: #2563eb;      // Hover primary
+
+  // Shadows
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+
+  // Gradients - Lighter and more modern
+  --gradient-primary: linear-gradient(135deg, #3b82f6 0%, #60a5fa 100%);
+  --gradient-accent: linear-gradient(135deg, #f59e0b 0%, #ef4444 100%);
+  --gradient-bg: linear-gradient(135deg, #e0e7ff 0%, #c7d2fe 100%);
+  --gradient-hero: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+}
+
+// Force light theme - Disable any dark mode
+* {
+  color-scheme: light !important;
+}
+
+@media (prefers-color-scheme: dark) {
+  * {
+    color-scheme: light !important;
+  }
+
+  :root {
+    --bg-color: #ffffff !important;
+    --bg-secondary: #f9fafb !important;
+    --bg-tertiary: #f3f4f6 !important;
+    --bg-card: #ffffff !important;
+    --text-color: #374151 !important;
+    --text-muted: #9ca3af !important;
+    --border-color: #e5e7eb !important;
+    --hover-bg: #f8fafc !important;
+  }
+}

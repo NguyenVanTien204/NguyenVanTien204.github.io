@@ -1,0 +1,286 @@
+// Intro section styling
+.feature__wrapper--intro {
+  background: var(--bg-secondary);
+  padding: 4em 0;
+  text-align: center;
+
+  .archive__item {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    max-width: 800px;
+    margin: 0 auto;
+    min-height: auto; // Override min-height for intro section
+
+    &:hover {
+      transform: none;
+    }
+
+    .archive__item-body {
+      padding: 2em;
+      justify-content: center; // Center content vertically
+    }
+
+    .archive__item-excerpt {
+      font-size: 1.05em; // Giảm từ 1.2em xuống 1.05em
+      color: var(--text-color);
+      line-height: 1.7;
+      font-weight: 400;
+    }
+  }
+}
+
+// Feature rows cho homepage - Cải thiện layout
+.feature__wrapper {
+  background: var(--bg-color);
+  padding: 4em 0;
+
+  .feature__item,
+  .archive__item {
+    background: var(--bg-card) !important;
+    border: 1px solid var(--border-color) !important;
+    border-radius: 16px !important;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: var(--shadow-sm) !important; // Force consistent shadow
+    display: flex;
+    flex-direction: column;
+    min-height: 320px;
+    padding: 0 !important; // Reset padding for feature cards
+    margin-bottom: 2em !important;
+
+    &:hover {
+      transform: translateY(-8px) !important;
+      box-shadow: var(--shadow-xl) !important;
+      border-color: var(--primary-light) !important;
+    }
+
+    // Đảm bảo tất cả items có cùng chiều cao
+    .archive__item-teaser {
+      position: relative;
+      overflow: hidden;
+      height: 200px;
+      flex-shrink: 0; // Prevent shrinking
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+      }
+
+      &:hover img {
+        transform: scale(1.05);
+      }
+
+      // Placeholder cho images chưa có
+      &::after {
+        content: '🖼️';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 3em;
+        color: var(--text-muted);
+        background: var(--bg-secondary);
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
+    .archive__item-body {
+      padding: 2em !important; // Ensure padding for feature cards
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .archive__item-title {
+      color: var(--secondary-color);
+      font-size: 1.4em;
+      margin-bottom: 1em;
+      font-weight: 600;
+      line-height: 1.3;
+
+      a {
+        color: inherit;
+        text-decoration: none;
+
+        &:hover {
+          color: var(--primary-color);
+        }
+      }
+    }
+
+    .archive__item-excerpt {
+      color: var(--text-muted);
+      line-height: 1.6;
+      margin-bottom: 1.5em;
+      flex-grow: 1;
+    }
+
+    .archive__item-footer {
+      margin-top: auto;
+    }
+  }
+
+  // Grid layout cho features
+  &.feature__wrapper--3col {
+    .feature__items {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2em;
+      max-width: 1200px;
+      margin: 0 auto;
+      align-items: stretch; // Ensure equal height
+    }
+  }
+
+  // Default grid layout for multiple items
+  .feature__items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2em;
+    align-items: stretch; // Ensure equal height
+  }
+}
+
+// Hero section cho homepage - Light theme
+.page__hero {
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-light) 100%);
+  color: var(--text-light);
+  text-align: center;
+  padding: 5em 0;
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 20"><defs><radialGradient id="a" cx="50%" cy="50%"><stop offset="0%" stop-color="rgba(255,255,255,.1)"/><stop offset="100%" stop-color="rgba(255,255,255,0)"/></radialGradient></defs><rect width="100" height="20" fill="url(%23a)"/></svg>');
+    opacity: 0.3;
+  }
+
+  .page__title {
+    color: var(--text-light);
+    font-size: 3.5em;
+    margin-bottom: 0.5em;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    font-weight: 700;
+    position: relative;
+    z-index: 2;
+  }
+
+  .page__lead {
+    font-size: 1.4em;
+    color: rgba(255, 255, 255, 0.95);
+    margin-bottom: 2.5em;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+    position: relative;
+    z-index: 2;
+  }
+
+  .page__hero-actions {
+    position: relative;
+    z-index: 2;
+  }
+}
+
+// Home layout specific styling
+.layout--home {
+  .page {
+    background: var(--bg-color);
+  }
+
+  .page__content {
+    background: var(--bg-color);
+    padding: 0;
+  }
+}
+
+// Post grid styling cho home
+.entries-list {
+  .list__item {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    margin-bottom: 2em;
+    overflow: hidden;
+    transition: all 0.3s ease;
+
+    &:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-lg);
+      border-color: var(--primary-light);
+    }
+
+    .archive__item-teaser {
+      height: 200px;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+      }
+
+      &:hover img {
+        transform: scale(1.05);
+      }
+    }
+
+    .archive__item {
+      padding: 1.5em;
+      border: none;
+      background: transparent;
+
+      &:hover {
+        transform: none;
+        box-shadow: none;
+      }
+    }
+  }
+}
+
+// Loading animations
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.page__content {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.sidebar {
+  animation: slideInLeft 0.6s ease-out;
+}

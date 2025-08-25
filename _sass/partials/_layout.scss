@@ -1,0 +1,110 @@
+// Header với background sáng và hiện đại
+.masthead {
+  background: var(--bg-card);
+  border-bottom: 1px solid var(--border-color);
+  box-shadow: var(--shadow-sm);
+  backdrop-filter: blur(10px);
+
+  .site-title {
+    font-weight: 700;
+    color: var(--primary-color);
+    font-size: 1.8em;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: var(--hover-primary);
+    }
+  }
+
+  .site-subtitle {
+    color: var(--text-muted);
+    font-style: italic;
+    font-weight: 400;
+  }
+}
+
+// Navigation hiện đại với màu sáng
+.greedy-nav {
+  background: transparent;
+
+  .nav-link {
+    color: var(--text-color);
+    font-weight: 500;
+    font-size: 0.95em;
+    padding: 0.5em 1em;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    margin: 0 0.2em;
+
+    &:hover {
+      background: var(--hover-bg);
+      color: var(--primary-color);
+      transform: translateY(-1px);
+    }
+  }
+
+  .nav-toggle {
+    color: var(--text-color);
+  }
+}
+
+// Footer với màu tối sang trọng nhưng không quá đậm
+.page__footer {
+  background: linear-gradient(135deg, var(--secondary-color) 0%, #475569 100%);
+  color: var(--text-light);
+  border-top: 1px solid var(--border-color);
+  padding: 3em 0 2em 0;
+  margin-top: 4em;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: var(--gradient-primary);
+  }
+
+  .page__footer-copyright {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.9em;
+
+    a {
+      color: var(--accent-color);
+      text-decoration: none;
+
+      &:hover {
+        color: white;
+        text-decoration: underline;
+      }
+    }
+
+    small {
+      display: block;
+      margin-top: 0.5em;
+      color: rgba(255, 255, 255, 0.6);
+    }
+  }
+
+  .social-icons {
+    text-align: center;
+    margin-bottom: 1em;
+
+    .social-icon {
+      display: inline-block;
+      margin: 0 0.5em;
+      padding: 0.5em;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 50%;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background: var(--accent-color);
+        transform: translateY(-2px);
+      }
+    }
+  }
+}

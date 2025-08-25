@@ -1,0 +1,190 @@
+// Buttons hiện đại với nhiều variants
+.btn {
+  border-radius: 25px;
+  font-weight: 500;
+  text-transform: none;
+  padding: 0.7em 1.8em;
+  border: none;
+  transition: all 0.3s ease;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 0.95em;
+
+  &--primary {
+    background: var(--gradient-primary);
+    color: var(--text-light);
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(59, 130, 246, 0.3);
+      color: var(--text-light);
+    }
+  }
+
+  &--accent {
+    background: var(--gradient-accent);
+    color: var(--text-light);
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(245, 158, 11, 0.3);
+      color: var(--text-light);
+    }
+  }
+
+  &--light-outline {
+    background: transparent;
+    color: var(--text-light);
+    border: 2px solid rgba(255, 255, 255, 0.8);
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.15);
+      border-color: var(--text-light);
+      transform: translateY(-2px);
+      color: var(--text-light);
+    }
+  }
+
+  &--secondary {
+    background: var(--bg-card);
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+
+    &:hover {
+      background: var(--hover-bg);
+      border-color: var(--primary-color);
+      transform: translateY(-2px);
+      color: var(--primary-color);
+    }
+  }
+}
+
+// Code blocks với syntax highlighting hiện đại
+.highlight {
+  background: #f8fafc;
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+  overflow: hidden;
+  margin: 1.5em 0;
+  box-shadow: var(--shadow-sm);
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: var(--gradient-primary);
+  }
+
+  pre {
+    margin: 0;
+    padding: 1.5em;
+    color: var(--text-color);
+    font-family: 'JetBrains Mono', 'Fira Code', monospace;
+    font-size: 0.9em;
+    line-height: 1.6;
+    background: transparent;
+  }
+
+  // Syntax highlighting colors for light theme
+  .c { color: #6b7280; } // Comments
+  .k { color: #3b82f6; } // Keywords
+  .s { color: #059669; } // Strings
+  .n { color: var(--text-color); } // Names
+  .o { color: #f59e0b; } // Operators
+  .nb { color: #8b5cf6; } // Built-ins
+  .nf { color: #dc2626; } // Functions
+}
+
+// Inline code
+code {
+  background: var(--bg-tertiary);
+  color: var(--primary-color);
+  padding: 0.2em 0.5em;
+  border-radius: 6px;
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  font-size: 0.9em;
+  border: 1px solid var(--border-light);
+}
+
+// Table of Contents styling
+.toc {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 1.5em;
+  margin-bottom: 2em;
+
+  .nav__title {
+    color: var(--secondary-color);
+    font-weight: 600;
+    margin-bottom: 1em;
+    padding-bottom: 0.5em;
+    border-bottom: 2px solid var(--primary-color);
+  }
+
+  .nav__list {
+    a {
+      color: var(--text-muted);
+      transition: all 0.3s ease;
+      padding: 0.3em 0.5em;
+      border-radius: 6px;
+      display: block;
+
+      &:hover {
+        color: var(--primary-color);
+        background: var(--hover-bg);
+        transform: translateX(4px);
+      }
+
+      &.active {
+        color: var(--primary-color);
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+// Post styling với colors mới
+.page__title {
+  color: var(--secondary-color);
+  font-weight: 600;
+  margin-bottom: 0.5em;
+  font-size: 2.2em;
+  line-height: 1.2;
+}
+
+.page__meta {
+  color: var(--text-muted);
+  font-size: 0.9em;
+  font-weight: 400;
+
+  i {
+    color: var(--accent-color);
+    margin-right: 0.3em;
+  }
+}
+
+.page__content {
+  font-size: 1.05em;
+
+  p {
+    margin-bottom: 1.5em;
+  }
+
+  blockquote {
+    border-left: 4px solid var(--accent-color);
+    background: var(--bg-secondary);
+    padding: 1em 1.5em;
+    margin: 1.5em 0;
+    border-radius: 0 8px 8px 0;
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
